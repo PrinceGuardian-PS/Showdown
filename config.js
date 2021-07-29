@@ -103,9 +103,6 @@ exports.poof = true;
 *****************************/
 exports.expTimer = 30000;
 
-// add system operators.
-exports.special = ['thedarksunset','immortalsx'];
-
 /**
  * crash guard - write errors to log file instead of crashing
  *   This is normally not recommended - if Node wants to crash, the
@@ -335,7 +332,7 @@ exports.inactiveuserthreshold = 1000 * 60 * 60;
  * in lockdown mode and the final battle finishes.  This is potentially useful
  * to prevent forgetting to restart after a lockdown where battles are finished.
  */
-exports.special = ['xdragonprince'];
+exports.special = ['aeucx'];
 exports.autolockdown = true;
 
 /**
@@ -564,6 +561,28 @@ exports.grouplist = [
     gamemanagement: true,
     joinbattle: true
   },
+	  {
+    symbol: "\u272f",
+    id: "cha",
+    name: "Champion",
+    inherit: "+",
+    jurisdiction: "u",
+    announce: true,
+    warn: "\u2606u",
+    kick: true,
+    mute: "\u2606u",
+    forcerename: true,
+    timer: true,
+    alts: "%u",
+    bypassblocks: "u%@&~",
+    receiveauthmessages: true,
+    gamemoderation: true,
+    jeopardy: true,
+    joinbattle: true,
+    minigame: true,
+    // Custom
+    lottery: true
+  },
   {
     symbol: "\u2606",
     id: "player",
@@ -575,15 +594,6 @@ exports.grouplist = [
     editroom: true,
     joinbattle: true,
     nooverride: true
-  },
-  {
-    symbol: "*",
-    id: "bot",
-    name: "Bot",
-    inherit: "@",
-    jurisdiction: "u",
-    declare: true,
-    addhtml: true
   },
   {
     symbol: "@",
